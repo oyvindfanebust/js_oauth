@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Callback</title>
+	<script src="dist/authentication.js"></script>
+</head>
+<body>
+	<script>
+		localStorage['token'] = /#token=(.*)/.exec(window.location.href)[1];
+		window.location = localStorage['source'];
+	</script>
+</body>
+</html>
